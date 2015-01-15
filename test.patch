@@ -1,0 +1,25 @@
+From d5a2dcbeaa98c975ad0c00f83429ccc1306c20e7 Mon Sep 17 00:00:00 2001
+From: Alberto Murillo <alberto.murillo.silva@intel.com>
+Date: Fri, 17 Jul 2015 11:17:28 -0500
+Subject: [PATCH] test
+
+---
+ test-requirements.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test-requirements.txt b/test-requirements.txt
+index cf0a1f9..8e8c1fe 100644
+--- a/test-requirements.txt
++++ b/test-requirements.txt
+@@ -1,7 +1,7 @@
+ # The order of packages is significant, because pip processes them in the order
+ # of appearance. Changing the order has an impact on the overall integration
+ # process, which may cause wedges in the gate later.
+-hacking<0.9,>=0.8.0
++hacking
+ 
+ coverage>=3.6
+ discover
+-- 
+2.1.0
+
