@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 1.2.0
-Release  : 22
+Release  : 23
 URL      : http://tarballs.openstack.org/python-glanceclient/python-glanceclient-1.2.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-glanceclient/python-glanceclient-1.2.0.tar.gz
 Summary  : OpenStack Image API Client Library
