@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 2.0.0
-Release  : 24
+Release  : 25
 URL      : http://tarballs.openstack.org/python-glanceclient/python-glanceclient-2.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-glanceclient/python-glanceclient-2.0.0.tar.gz
 Summary  : OpenStack Image API Client Library
@@ -12,39 +12,25 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-glanceclient-bin
 Requires: python-glanceclient-python
-BuildRequires : Sphinx-python
-BuildRequires : coverage-python
-BuildRequires : discover-python
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
-BuildRequires : hacking
 BuildRequires : jsonpatch-python
 BuildRequires : jsonpointer-python
 BuildRequires : jsonschema-python
 BuildRequires : msgpack-python-python
-BuildRequires : ordereddict-python
-BuildRequires : os-client-config-python
-BuildRequires : os-testr-python
-BuildRequires : oslo.config
 BuildRequires : oslo.i18n-python
-BuildRequires : oslo.log-python
 BuildRequires : oslo.utils-python
-BuildRequires : oslosphinx-python
-BuildRequires : paramiko-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pluggy
-BuildRequires : prettytable
 BuildRequires : py-python
 BuildRequires : pyrsistent-python
 BuildRequires : pytest
 BuildRequires : python-dev
 BuildRequires : python-keystoneclient-python
-BuildRequires : python-mimeparse-python
-BuildRequires : python-mock-python
 BuildRequires : python3-dev
-BuildRequires : reno-python
+BuildRequires : pytz-python
 BuildRequires : requests-mock-python
 BuildRequires : requests-python
 BuildRequires : setuptools
@@ -52,8 +38,6 @@ BuildRequires : tempest-lib-python
 BuildRequires : testrepository-python
 BuildRequires : testscenarios
 BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
 BuildRequires : virtualenv
 BuildRequires : warlock-python
 
@@ -74,7 +58,6 @@ Summary: python components for the python-glanceclient package.
 Group: Default
 Requires: oslo.i18n-python
 Requires: oslo.utils-python
-Requires: prettytable
 Requires: python-keystoneclient-python
 Requires: requests-python
 Requires: warlock-python
@@ -88,15 +71,12 @@ python components for the python-glanceclient package.
 
 %build
 python2 setup.py build -b py2
+python3 setup.py build -b py3
 
-%check
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}/usr/lib/python2.7/site-packages python2 setup.py test || :
 %install
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot}
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 
 %files
 %defattr(-,root,root,-)
