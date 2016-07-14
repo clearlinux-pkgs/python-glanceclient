@@ -1,12 +1,46 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Updated from global requirements
+* Remove deprecated construct method from session init
+* Add upper constraints to glanceclient
+* Updated from global requirements
+* Fixed grammar in image-download command description
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* [Trivial] Remove unnecessary executable privilege
+* Fix "Codec can't encode characters"
+* Updated from global requirements
+* Update the home-page with developer documentation
+* Get endpoint if os_image_url is not set
+* Updated from global requirements
+* Corrected wrong parameter in docstring
+* Updated from global requirements
+* Enable hacking checks
+* Fix typos in docstrings and comments
+* Updated from global requirements
+* Re-enable stacktracing when --debug is used
+* Add last_request_id member to HTTPClient and SessionClient
+* Fix v2 so that you can see the default help info
+* Update auth_token before sending request
+* Fix missing of debug info after we use session
+* Ship the default metadata schema in the client
+* Docs are generated incorrectly
+* Fix location update
+* Catch InUseByStore case in do_image_delete
+* Update reno for stable/mitaka
+
 2.0.0
 -----
 
 * Handle 403 forbidden on download
 * Test: use assert_has_calls() instead
 * Updated from global requirements
+* trival: fix a typo in comment
 * Auto-generated squash commit
 * Add reno to glanceclient
 * Updated from global requirements
