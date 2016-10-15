@@ -1,12 +1,57 @@
 CHANGES
 =======
 
+2.5.0
+-----
+
+* Updated from global requirements
+* Revert "Don't update tags every time"
+* Update doc URL
+
+2.4.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+
+2.3.0
+-----
+
+* Updated from global requirements
+* Remove unused openstack/common/apiclient/client
+* Replace OpenStack LLC with OpenStack Foundation
+* py3: Fix encoding and use sys.stdin.buffer
+* Remove discover from test-requirements
+* Updated from global requirements
+* Log request-id before exceptions raised
+* Fix string interpolation to delayed to be handled by the logging code
+
+2.2.0
+-----
+
+* Add comment about workaround for py3
+* Properly build releasenotes
+* Update docs URL
+* Add Python 3.5 classifier and venv
+* Fix warlock model creation
+* Updated from global requirements
+* image-download: tests to catch stray output
+* Use correct order of arguments to assertEqual
+* Updated from global requirements
+* Update outdated image shema
+* Replace tempest_lib with tempest.lib
+* Log request-id for each api call
+* Updated from global requirements
+* Updated from global requirements
+
 2.1.0
 -----
 
 * Updated from global requirements
 * Remove deprecated construct method from session init
 * Add upper constraints to glanceclient
+* Remove unused skip_authentication decorator
+* Don't update tags every time
 * Updated from global requirements
 * Fixed grammar in image-download command description
 * Updated from global requirements
