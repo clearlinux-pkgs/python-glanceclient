@@ -1,6 +1,39 @@
 CHANGES
 =======
 
+2.6.0
+-----
+
+* Updated from global requirements
+* Add request id to returned objects
+* Add ploop in disk_format
+* Updated from global requirements
+* Handle formatting of subcommand name in error output
+* Add vhdx in disk_format
+* Updated from global requirements
+* Use import_versioned_module from oslo.utils
+* Updated from global requirements
+* Add alt text for badges
+* Show team and repo badges on README
+* Add support for community images
+* Updated from global requirements
+* Move old oslo-incubator code out of openstack/common
+* Updated from global requirements
+* Enable release notes translation
+* Add Apache 2.0 license to source file
+* Updated from global requirements
+* Remove unused _i18n.py shim
+* Updated from global requirements
+* Replace 'assertTrue(a not in b)' with 'assertNotIn(a, b)'
+* Updated from global requirements
+* Updated from global requirements
+* standardize release note page ordering
+* Updated from global requirements
+* switch from keystoneclient to keystoneauth
+* Improve tools/tox_install.sh
+* Use constraints everywhere
+* Update reno for stable/newton
+
 2.5.0
 -----
 
@@ -57,6 +90,7 @@ CHANGES
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
+* Revert "Add last_request_id member to HTTPClient and SessionClient"
 * [Trivial] Remove unnecessary executable privilege
 * Fix "Codec can't encode characters"
 * Updated from global requirements
