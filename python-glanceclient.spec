@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 2.6.0
-Release  : 35
+Release  : 36
 URL      : http://pypi.debian.net/python-glanceclient/python-glanceclient-2.6.0.tar.gz
 Source0  : http://pypi.debian.net/python-glanceclient/python-glanceclient-2.6.0.tar.gz
 Summary  : OpenStack Image API Client Library
@@ -48,6 +48,7 @@ BuildRequires : testscenarios
 BuildRequires : tox
 BuildRequires : virtualenv
 BuildRequires : warlock-python
+Patch1: requires.patch
 
 %description
 ========================
@@ -84,15 +85,16 @@ python components for the python-glanceclient package.
 
 %prep
 %setup -q -n python-glanceclient-2.6.0
+%patch1 -p1
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487955828
+export SOURCE_DATE_EPOCH=1487960503
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487955828
+export SOURCE_DATE_EPOCH=1487960503
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
