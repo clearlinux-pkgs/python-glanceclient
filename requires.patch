@@ -1,8 +1,11 @@
---- python-glanceclient-2.6.0/requirements.txt~	2017-01-24 17:34:25.000000000 +0000
-+++ python-glanceclient-2.6.0/requirements.txt	2017-02-24 18:20:00.705869091 +0000
-@@ -6,7 +6,7 @@
+--- python-glanceclient-2.6.0/requirements.txt.org	2017-02-24 18:22:30.980344402 +0000
++++ python-glanceclient-2.6.0/requirements.txt	2017-02-24 18:22:42.157127431 +0000
+@@ -4,9 +4,9 @@
+ pbr>=1.8 # Apache-2.0
+ Babel>=2.3.4 # BSD
  PrettyTable<0.8,>=0.7.1 # BSD
- keystoneauth1>=2.18.0 # Apache-2.0
+-keystoneauth1>=2.18.0 # Apache-2.0
++keystoneauth1
  requests!=2.12.2,>=2.10.0 # Apache-2.0
 -warlock!=1.3.0,<2,>=1.0.1 # Apache-2.0
 +warlock

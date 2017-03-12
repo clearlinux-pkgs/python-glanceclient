@@ -1,27 +1,2 @@
-extras
-extras-python
-fixtures-python
-jsonpatch-python
-jsonpointer-python
-jsonschema-python
-msgpack-python-python
-oslo.i18n-python
-oslo.utils-python
-pbr
-pip
-pluggy
-py-python
-pytest
-python3-dev
-python-dev
-python-keystoneclient-python
-pytz-python
-requests-mock-python
-requests-python
-setuptools
-tempest-lib-python
-testrepository-python
-testscenarios
-tox
-virtualenv
-warlock-python
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
