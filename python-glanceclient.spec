@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 2.6.0
-Release  : 38
+Release  : 39
 URL      : http://pypi.debian.net/python-glanceclient/python-glanceclient-2.6.0.tar.gz
 Source0  : http://pypi.debian.net/python-glanceclient/python-glanceclient-2.6.0.tar.gz
 Summary  : OpenStack Image API Client Library
