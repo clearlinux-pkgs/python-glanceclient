@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 2.11.1
-Release  : 41
+Release  : 42
 URL      : https://files.pythonhosted.org/packages/72/d1/37b59cdefa42de90dba94a2dc42ceb599e89423cc03ab837fe07dba05732/python-glanceclient-2.11.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/72/d1/37b59cdefa42de90dba94a2dc42ceb599e89423cc03ab837fe07dba05732/python-glanceclient-2.11.1.tar.gz
 Summary  : OpenStack Image API Client Library
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532239275
+export SOURCE_DATE_EPOCH=1532244136
 python3 setup.py build -b py3
 
 %install
