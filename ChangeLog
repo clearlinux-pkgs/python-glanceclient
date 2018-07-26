@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+2.12.1
+------
+
+* Skip quote '=' for token header
+* Add releasenote for 2.12.1
+* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
+* Update .gitreview for stable/rocky
+
 2.12.0
 ------
 
