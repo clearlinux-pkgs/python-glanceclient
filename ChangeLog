@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+2.12.0
+------
+
+* Correct typo in releasenote
+* Releasenotes for bugfixes in 2.12.0
+* Add support for hide old images
+* Do not quote '+' for token header
+* Add release note for hidden images support
+* Add release note for multi-store support
+* Add multihash release note
+* Unit tests for multi-store support
+* Add multi-store support
+* image-list: add checksum algorithm description
+* Add support for multihash
+* Replace 'raise StopIteration' with 'return'
+* Add release note link in README
+* Add experimental python3 functional test gate
+* fix tox python3 overrides
+* update shell tests to not rely on the serialization order of a dict
+* Remove PyPI downloads
+
 2.11.1
 ------
 
@@ -28,9 +49,11 @@ CHANGES
 * Check for container,disk\_format on web-download
 * Update properties URL
 * Add support for web-download import method
+* Fix docs cli authorize environment variables
 * Remove usage of ordereddict
 * Updated from global requirements
 * Updated from global requirements
+* Update 'doc/source/reference/apiv2.rst'
 * Remove usage of ordereddict
 * Updated from global requirements
 * Removes unicode 'u' response from "glance image-tag-update"
