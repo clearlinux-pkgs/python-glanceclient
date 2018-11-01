@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.13.0
+------
+
+* Use "multihash" for data download validation
+* Refactor periodic "tips" jobs
+* import zuul job settings from project-config
+
 2.12.1
 ------
 
