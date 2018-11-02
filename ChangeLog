@@ -1,20 +1,19 @@
 CHANGES
 =======
 
-2.13.0
+2.14.0
 ------
 
-* Use "multihash" for data download validation
 * Refactor periodic "tips" jobs
+* Cleanup .zuul.yaml
+* Use "multihash" for data download validation
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* switch documentation job to new PTI
 * import zuul job settings from project-config
-
-2.12.1
-------
-
+* Remove team diversity tags note in README
+* Update reno for stable/rocky
 * Skip quote '=' for token header
-* Add releasenote for 2.12.1
-* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
-* Update .gitreview for stable/rocky
 
 2.12.0
 ------
