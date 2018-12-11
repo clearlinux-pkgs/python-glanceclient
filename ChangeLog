@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+2.15.0
+------
+
+* Show the backend store info
+* Don't quote colon in HTTP headers
+
 2.14.0
 ------
 
