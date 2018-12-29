@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 2.15.0
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/5b/10/e88a85d8bf5669a097aa9cbc8511d676885d415d1cde9768b6e6239a45a4/python-glanceclient-2.15.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5b/10/e88a85d8bf5669a097aa9cbc8511d676885d415d1cde9768b6e6239a45a4/python-glanceclient-2.15.0.tar.gz
 Summary  : OpenStack Image API Client Library
