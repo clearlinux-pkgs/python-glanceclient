@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 2.15.0
-Release  : 50
+Release  : 51
 URL      : https://files.pythonhosted.org/packages/5b/10/e88a85d8bf5669a097aa9cbc8511d676885d415d1cde9768b6e6239a45a4/python-glanceclient-2.15.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5b/10/e88a85d8bf5669a097aa9cbc8511d676885d415d1cde9768b6e6239a45a4/python-glanceclient-2.15.0.tar.gz
 Summary  : OpenStack Image API Client Library
@@ -14,25 +14,33 @@ Requires: python-glanceclient-bin = %{version}-%{release}
 Requires: python-glanceclient-license = %{version}-%{release}
 Requires: python-glanceclient-python = %{version}-%{release}
 Requires: python-glanceclient-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: keystoneauth1
-Requires: openstackdocstheme
 Requires: oslo.i18n
 Requires: oslo.utils
 Requires: pbr
 Requires: pyOpenSSL
-Requires: reno
 Requires: requests
 Requires: six
-Requires: sphinxcontrib-apidoc
 Requires: warlock
 Requires: wrapt
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/python-glanceclient.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
+:alt: The following tags have been asserted for Python bindings to the
+OpenStack Images API:
+"project:official",
+"stable:follows-policy",
+"vulnerability:managed".
+Follow the link for an explanation of these tags.
+.. NOTE(rosmaita): the alt text above will have to be updated when
+additional tags are asserted for python-glanceclient.  (The SVG in the
+governance repo is updated automatically.)
 
 %package bin
 Summary: bin components for the python-glanceclient package.
@@ -77,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1544545289
+export SOURCE_DATE_EPOCH=1551029437
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
