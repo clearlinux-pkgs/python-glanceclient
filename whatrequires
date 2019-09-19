@@ -1,2 +1,7 @@
 # This file contains recursive sources that require this package
+cinder
 horizon
+ironic
+nova
+python-openstackclient
+sahara
