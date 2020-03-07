@@ -4,7 +4,7 @@
 #
 Name     : python-glanceclient
 Version  : 3.0.0
-Release  : 59
+Release  : 60
 URL      : https://files.pythonhosted.org/packages/eb/76/d333765a789296b181f50b8c8ecf4b4c168a9ad3354cb96dbdd12e26483d/python-glanceclient-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/eb/76/d333765a789296b181f50b8c8ecf4b4c168a9ad3354cb96dbdd12e26483d/python-glanceclient-3.0.0.tar.gz
 Summary  : OpenStack Image API Client Library
@@ -35,20 +35,8 @@ BuildRequires : warlock
 BuildRequires : wrapt
 
 %description
-========================
 Team and repository tags
-========================
-.. image:: https://governance.openstack.org/tc/badges/python-glanceclient.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
-:alt: The following tags have been asserted for Python bindings to the
-OpenStack Images API:
-"project:official",
-"stable:follows-policy",
-"vulnerability:managed".
-Follow the link for an explanation of these tags.
-.. NOTE(rosmaita): the alt text above will have to be updated when
-additional tags are asserted for python-glanceclient.  (The SVG in the
-governance repo is updated automatically.)
+        ========================
 
 %package bin
 Summary: bin components for the python-glanceclient package.
@@ -80,7 +68,17 @@ python components for the python-glanceclient package.
 Summary: python3 components for the python-glanceclient package.
 Group: Default
 Requires: python3-core
-Provides: pypi(python-glanceclient)
+Provides: pypi(python_glanceclient)
+Requires: pypi(keystoneauth1)
+Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.utils)
+Requires: pypi(pbr)
+Requires: pypi(prettytable)
+Requires: pypi(pyopenssl)
+Requires: pypi(requests)
+Requires: pypi(six)
+Requires: pypi(warlock)
+Requires: pypi(wrapt)
 
 %description python3
 python3 components for the python-glanceclient package.
@@ -95,8 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583212229
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583540942
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
