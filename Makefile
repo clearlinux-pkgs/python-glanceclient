@@ -1,5 +1,5 @@
 PKG_NAME := python-glanceclient
-URL = https://files.pythonhosted.org/packages/fe/2f/a81f89b5ef18f4d9924b8264da360280ebea12eb409a51d17843f0b2bddf/python-glanceclient-3.2.1.tar.gz
+URL = https://files.pythonhosted.org/packages/d5/96/39bcfbf7fc957741b738c1e3160c24a2068bb1014d254bb04951adf6cf02/python-glanceclient-3.2.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
